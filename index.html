@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tune Pin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="header">
+  <h1>🎵 Tune Pin</h1>
+  <p>Drop a pin. Attach a song. Share the vibe.</p>
+
+  <div class="actions">
+    <button id="dropPinBtn">Drop a Pin</button>
+    <button id="resetPinsBtn" class="danger">Reset Pins</button>
+  </div>
+</header>
+
+<input id="searchBox" placeholder="Search restaurants, stores, places…" />
+
+<div id="map"></div>
+
+<div id="editor" class="editor">
+  <h3>Add / Edit Pin</h3>
+
+  <input id="titleInput" placeholder="Pin title" />
+  <input id="songInput" placeholder="Song link (Spotify / Apple / YouTube)" />
+  <input id="instagramInput" placeholder="Instagram link" />
+  <input id="facebookInput" placeholder="Facebook link" />
+  <input id="xInput" placeholder="X (Twitter) link" />
+
+  <button id="savePinBtn">Save Pin</button>
+  <button id="closeEditorBtn" class="secondary">Close</button>
+</div>
+
+<footer>
+  Created by <strong>Parth Pankaj Bakhda</strong> — Tune Pin
+</footer>
+
+<script src="app.js"></script>
+
+<!-- 🔑 REPLACE AIzaSyBkCFcW9g65pmc3j9Jkra99CslQTEubyxg -->
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkCFcW9g65pmc3j9Jkra99CslQTEubyxg&libraries=places&callback=initMap">
+</script>
+
+</body>
+</html>
